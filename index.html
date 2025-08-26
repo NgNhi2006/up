@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Nút đi đến YouTube</title>
+  <style>
+    .btn-youtube {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      background: #ff0000;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Hiệu ứng hover */
+    .btn-youtube:hover {
+      background: #cc0000;
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+
+    /* Hiệu ứng khi nhấn */
+    .btn-youtube:active {
+      transform: scale(0.95);
+    }
+
+    /* căn giữa nút */
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">Đi đến video gốc trên YouTube bằng hyperlink</h2>
+
+  <div class="button-container">
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+       target="_blank" 
+       class="btn-youtube">
+       Xem trên YouTube
+    </a>
+  </div>
+  <style>
+    .video-container {
+      text-align: center; /* căn giữa ngang */
+      margin-top: 20px;   /* tạo khoảng cách phía trên */
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align: center;">Nhúng video từ youtube đến trang web bằng &lt;iframe&gt;</h2>
+
+  <div class="video-container">
+    <iframe
+     width="560" height="315" 
+     src="https://www.youtube.com/embed/uZNV1o7yLys?si=GzRXe9_bMyLNf3nG" 
+     title="YouTube video player" frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+  </div>
+
+</body>
+</html>
